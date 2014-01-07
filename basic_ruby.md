@@ -44,10 +44,10 @@ Implement a behavior.
 
 ### attributes == data.
 
-#  Simple Ruby Classes.
+#  Simple Ruby *Core* Classes.
 Numbers, Strings, Arrays, Ranges, Symbols, Hashes, Regular Expressions.
 
-Only have behavior, set of methods.  Some of these methods may be called operators as well.
+These only have behavior, implemented in a  set of methods.  Some of these methods may be called operators as well.
 
 ## Numbers
 
@@ -76,6 +76,15 @@ Should get you to the definition of this class.
 66 - 33
 
 108/8
+
+10 % 4 # Modulo, returns the remainder
+
+4 ** 2 # Exponents
+
+77 += 3 # Increment, same as 77 = 77 + 3
+
+77 -= 7 # Decrement, same as 77 = 77 - 7
+
 
 ### Float
 
@@ -128,6 +137,16 @@ true == false
 
 (1 == 55)  == true
 
+43 < 43
+
+43 <= 43
+
+43 <=> 42
+
+43 <=> 43
+
+43 <=> 44
+
 # Strings.
 Ruby strings are a set of characters. It is *very* important that you know the methods for this class. You'll be using them a lot!.
 
@@ -151,3 +170,95 @@ Lots of methods that you should know!
 "This one" == "This one"
 "This one" == "This two"
 "This one" != "This one"
+
+# Variables
+Variables are where we store a *reference* to an object. For now we'll store only objects that a simple, core types.
+
+## In Pry
+my_child_age = 2
+my_age = 32
+current_year = 2014
+child_dob = current_year - my_child_age
+my_dob = current_year - my_age
+my_dads_age = 57
+my_dads_dob = current_year - my_dads_age
+
+my_first_name = "Jen"
+my_last_name = "Smith"
+my_full_name = my_first_name + " " + my_last_name
+
+# String Interpolation
+Inserting strings into other strings.
+
+## Must use double quotes
+my_full_name = "#{my_first_name} #{ my_last_name}"
+
+## Fails with single quotes
+my_full_name = #{my_first_name} #{ my_last_name}"
+
+
+# Ruby Interpreter
+Lets create a Ruby program.
+
+The Ruby Interperter is just a program that is started when you invoke the 'ruby' command on the command line.
+
+It will run "Ruby", aka Ruby interpreter and take a file names as a parameter.
+
+## Create a branch named 'my_work' and change into this branch.
+##  Create a file 'basic_ruby.rb" and insert the below Ruby
+my_child_age = 2
+my_age = 32
+current_year = 2014
+child_dob = current_year - my_child_age
+my_dob = current_year - my_age
+my_dads_age = 57
+my_dads_dob = current_year - my_dads_age
+
+my_first_name = "Jen"
+my_last_name = "Smith"
+my_full_name = my_first_name + " " + my_last_name
+
+## Run the above ruby.
+ruby basic_ruby.rb
+
+## Oops, can't see any result! Lets fix that with puts
+my_child_age = 2
+puts "my child's age is #{my_child_age}"
+
+my_age = 32
+puts "my age is #{my_age}"
+
+current_year = 2014
+puts "current year is #{current_year}"
+
+child_dob = current_year - my_child_age
+puts "child's Date of Birth = #{child_dob}"
+puts "child's Date of Birth = #{current_year - my_child_age}"
+
+my_dob = current_year - my_age
+my_dads_age = 57
+my_dads_dob = current_year - my_dads_age
+
+my_first_name = "Jen"
+my_last_name = "Smith"
+my_full_name = my_first_name + " " + my_last_name
+puts "my full name is #{my_full_name}"
+
+## Add comments to the above, and git commit.
+## Merge this branch into master branch.
+## Push to gtthub.
+
+
+# Naming Conventions
+## Snake case
+underscore between words of variable names. We're okay with longer names.
+Ex) `this_is_an_example_of_snake_case = "yep"`
+
+## Camel case
+ThisIsCamelCase`. We use this to name Classes and Modules; Ruby will let you use it for variables but by convention we don't.
+
+## Constants
+`ALL_CAPS`
+###  Set once and never chance in program.
+###  Ruby does not enforce the all-caps convention but it's good.
+###  Ruby will allow you to change the value of a constant, but it gives you a warning.
