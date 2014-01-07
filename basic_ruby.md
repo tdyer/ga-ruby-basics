@@ -56,7 +56,9 @@ Integers are all objects of class Fixnum.
 
 ### In Pry
  1 <return>
+ 
  55 <return>
+ 
  55.class.name <return>
 
 ### Behavior/Methods
@@ -90,7 +92,9 @@ Should get you to the definition of this class.
 
 ### In Pry
  1.6
+ 
  55.80706
+ 
  55.80706.class.name
 
 #### Operators
@@ -158,17 +162,25 @@ Lots of methods that you should know!
 
 ### In Pry
 "This is a string".length
+
 "This is a string".count
+
 "This is a string".reverse
+
 "This is a string".upcase
+
 "This is a string".split
 
 "This is " + "a string"
+
 "This is " << "a string"
+
 "This is " * 3
 
 "This one" == "This one"
+
 "This one" == "This two"
+
 "This one" != "This one"
 
 # Variables
@@ -176,15 +188,24 @@ Variables are where we store a *reference* to an object. For now we'll store onl
 
 ## In Pry
 my_child_age = 2
+
 my_age = 32
+
 current_year = 2014
+
 child_dob = current_year - my_child_age
+
 my_dob = current_year - my_age
+
 my_dads_age = 57
+
 my_dads_dob = current_year - my_dads_age
 
+
 my_first_name = "Jen"
+
 my_last_name = "Smith"
+
 my_full_name = my_first_name + " " + my_last_name
 
 # String Interpolation
@@ -202,20 +223,31 @@ Lets create a Ruby program.
 
 The Ruby Interperter is just a program that is started when you invoke the 'ruby' command on the command line.
 
-It will run "Ruby", aka Ruby interpreter and take a file names as a parameter.
+It will run "Ruby", aka Ruby interpreter, and takes one or more file names as a parameter. 
+
+## Ruby help
+ruby --help
 
 ## Create a branch named 'my_work' and change into this branch.
 ##  Create a file 'basic_ruby.rb" and insert the below Ruby
 my_child_age = 2
+
 my_age = 32
+
 current_year = 2014
+
 child_dob = current_year - my_child_age
+
 my_dob = current_year - my_age
+
 my_dads_age = 57
+
 my_dads_dob = current_year - my_dads_age
 
 my_first_name = "Jen"
+
 my_last_name = "Smith"
+
 my_full_name = my_first_name + " " + my_last_name
 
 ## Run the above ruby.
@@ -223,30 +255,39 @@ ruby basic_ruby.rb
 
 ## Oops, can't see any result! Lets fix that with puts
 my_child_age = 2
+
 puts "my child's age is #{my_child_age}"
 
 my_age = 32
 puts "my age is #{my_age}"
 
 current_year = 2014
+
 puts "current year is #{current_year}"
 
 child_dob = current_year - my_child_age
+
 puts "child's Date of Birth = #{child_dob}"
+
 puts "child's Date of Birth = #{current_year - my_child_age}"
 
 my_dob = current_year - my_age
+
 my_dads_age = 57
+
 my_dads_dob = current_year - my_dads_age
 
 my_first_name = "Jen"
+
 my_last_name = "Smith"
+
 my_full_name = my_first_name + " " + my_last_name
+
 puts "my full name is #{my_full_name}"
 
 ## Add comments to the above, and git commit.
 ## Merge this branch into master branch.
-## Push to gtthub.
+## Push to gitthub.
 
 
 # Naming Conventions
