@@ -1,3 +1,4 @@
+#This variable provides my child 's age
 my_child_age = 2
 
 puts "my child's age is #{my_child_age}"
@@ -10,8 +11,10 @@ current_year = 2014
 
 puts "current year is #{current_year}"
 
+
 child_dob = current_year - my_child_age
 
+#Prints child's dates of birth
 puts "child's Date of Birth = #{child_dob}"
 
 puts "child's Date of Birth = #{current_year - my_child_age}"
