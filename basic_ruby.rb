@@ -4,6 +4,8 @@ puts "my child's age is #{my_child_age}"
 
 my_age = 32
 
+puts "my age is #{my_age}"
+
 current_year = 2014
 
 puts "current year is #{current_year}"
