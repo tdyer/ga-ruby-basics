@@ -13,19 +13,6 @@ We can use PRY in our terminals to interact with Ruby. It is useful in helping t
 
 Why use PRY?  Good for debugging and quick feedback on your code. Save a year of your programming life. Also a fun playground for seeing immediate results
 
-**PRY Tips and Tricks**
-
-* To install, type `gem install pry` in your Terminal.
-* To start PRY, type `pry` and to exit, type `quit`.
-* If you mess up and need to exit, hit ctrl-C to get back your PRY prompt.
-
-    [21] pry(main)> 'mixed up"
-    [21] pry(main)*   {ctrl c to remove * and return to original state -works in most Unix programs}
-    [22] pry(main)>
-
-* To see what you've done in pry, navigate to your home directory and type: `less .pry_history`
-* Tab completion also works in PRY and SublimeText
-
 ###Intro to Ruby###
 
 Ruby is an interpreted language (as opposed to a compiled language such as C\C++) Ruby works in real-time: we don't have to write something, and then compile and then run it--with Ruby we can just write the program, and it runs it as type.
@@ -136,66 +123,6 @@ Concatenation:
 _What is the deal with `gets.chomp`?_
 
 `.chomp` deletes the last character. When you type gets, Ruby records every keystroke including the return key. gets.chomp tosses out the return key that you inevitably had to type.
-
-*** Conditional Statements ***
-
-These statements return booleans.
-
-`&&` means `and`
-    returns true only when both sides are true
-    [5] pry(main)> (1 < 3) && (4 < 5)
-|| mean or
-    returns true if either side is true
-=> true
-
-unless = if not
-    e.g. `if user != admin` is the same as `unless user = admin`
-
-##If Statement##
-
-If (true)
-  desired action
-elsif (true)
-  desired action
-else
-  default action if none are true
-end
-ALSO written as . . . desired action if true
-
-
-
-case (or switch statement): another way of writing if...elsif
-
-    ```ruby
-    puts "Hello, there.  What's your name?"                         \n
-    name = gets.chomp                                               \n
-    case name                                                       \n
-    when "tom"                                                      \n
-	  puts "hello sexy."                                            \n
-	when "fred"                                                     \n
-	  puts "oh, hi fred. :/"                                        \n
-	else                                                            \n
-      puts "who are you and why are you using my computer?"         \n
-    end                                                             \n
-    ```
-
-### anyone want to explain == vs =?###
-== is a boolean operator - it evaluates *if* two things are equal or not and returns "true" or "false".
-    I see `==` and think "is equal?"
-= is an assignment operator - it assigns the value on the right to the variable on the left.
-
-
-
-***LOOPS***
-- control structure. intended to repeat over something
-- `while` loop: does thing while a condition is true
-    `# This is an infinite loop         /n
-    while true                          /n
-        puts "do this thing forever"    /n
-    end`
-
-- .times
-
 
 QUIZ TOMORROW:
         - fill in the blank with methods to start seeing and using them
